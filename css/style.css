@@ -3129,6 +3129,22 @@ body {
   .about__column--right {
     padding-bottom: 120px;
   }
+
+  .small-screen__buttons {
+    bottom: 60px;
+  }
+
+  .faq-small__img {
+    bottom: 20px;
+  }
+
+  .faq-small__buttons {
+    bottom: 30px;
+  }
+
+  .contacts-small__buttons {
+    bottom: 60px;
+  }
 }
 
 @media (min-height: 767.98px) {
