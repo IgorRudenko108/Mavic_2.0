@@ -2745,6 +2745,10 @@ body {
     padding: 10px 0;
   }
 
+  .intro {
+    min-height: 630px;
+  }
+
   .intro__inner {
     min-height: 630px;
   }
@@ -2770,10 +2774,6 @@ body {
   .intro .instagram {
     width: 30px;
     height: 30px;
-  }
-
-  .intro .arrow-down {
-    margin-bottom: 30px;
   }
 
   .about__column--left {
@@ -2854,6 +2854,10 @@ body {
 }
 
 @media (max-height: 575.98px) {
+  .intro {
+    min-height: 425px;
+  }
+
   .intro__inner {
     min-height: 425px;
   }
@@ -3034,6 +3038,10 @@ body {
 }
 
 @media (max-height: 424.98px) {
+  .intro {
+    min-height: 320px;
+  }
+
   .intro__inner {
     min-height: 320px;
   }
@@ -3046,6 +3054,10 @@ body {
   .intro__text {
     font-size: 12px;
     margin: 5px;
+  }
+
+  .intro__arrow {
+    padding-top: 10px;
   }
 
   .about__title {
@@ -3106,6 +3118,16 @@ body {
 
   .contacts-small__bottom {
     bottom: -20px;
+  }
+}
+
+@media (orientation: portrait) {
+  .intro .arrow-down {
+    margin-bottom: 60px;
+  }
+
+  .about__column--right {
+    padding-bottom: 120px;
   }
 }
 
