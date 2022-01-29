@@ -1026,6 +1026,8 @@ body {
   padding: 8px 15px;
   background-color: #fff;
   color: #000;
+  position: relative;
+  z-index: 1;
 }
 
 .about__column-btn:hover {
