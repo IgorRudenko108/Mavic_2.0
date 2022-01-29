@@ -808,7 +808,7 @@ body {
 
 .intro {
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2745,10 +2745,6 @@ body {
     padding: 10px 0;
   }
 
-  .intro {
-    min-height: 630px;
-  }
-
   .intro__inner {
     min-height: 630px;
   }
@@ -2774,6 +2770,10 @@ body {
   .intro .instagram {
     width: 30px;
     height: 30px;
+  }
+
+  .intro .arrow-down {
+    margin-bottom: 30px;
   }
 
   .about__column--left {
@@ -2854,10 +2854,6 @@ body {
 }
 
 @media (max-height: 575.98px) {
-  .intro {
-    min-height: 425px;
-  }
-
   .intro__inner {
     min-height: 425px;
   }
@@ -3038,10 +3034,6 @@ body {
 }
 
 @media (max-height: 424.98px) {
-  .intro {
-    min-height: 320px;
-  }
-
   .intro__inner {
     min-height: 320px;
   }
