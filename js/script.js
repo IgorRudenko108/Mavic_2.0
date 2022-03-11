@@ -14,6 +14,41 @@ testWebP(function (support) {
 });
 
 
+// -- Меню бургер ----------------------------------------------
+const iconMenu = document.querySelector('.menu__icon');
+const menuBody = document.querySelector('.header__menu');
+const menuBodyBurger = document.querySelector('.menu__link');
+
+if (iconMenu) {
+	iconMenu.addEventListener("click", function (e) {
+		document.body.classList.toggle('_lock');
+		iconMenu.classList.toggle('_active');
+		menuBody.classList.toggle('_active');
+	});
+}
+
+
+const menuLinks = document.querySelectorAll('.menu__link');
+if (menuLinks.length > 0) {
+   menuLinks.forEach(menuLink => {
+      menuLink.addEventListener("click", onMenuLinkClick);
+   });
+   function onMenuLinkClick(e) {
+
+      if (iconMenu.classList.contains('_active')) {
+         document.body.classList.remove('_lock');
+         iconMenu.classList.remove('_active');
+         menuBody.classList.remove('_active');
+         menuBodyBurger.classList.toggle('_active');
+      }
+
+   }
+}
+// -- /Меню бургер ----------------------------------------------
+
+
+
+
 
 const pageSlider = new Swiper('.page-slider', {
 	// Optional parameters
@@ -253,21 +288,6 @@ let _slideToggle = (target, duration = 500) => {
       return _slideUp(target, duration);
    }
 }
-
-//========================================================================================================================================================
-/*
-Для родителя слойлеров пишем атрибут data-spollers
-Для заголовков слойлеров пишем атрибут data-spoller
-Если нужно включать\выключать работу спойлеров на разных размерах экранов
-пишем параметры ширины и типа брейкпоинта.
-Например:
-data-spollers="992,max" - спойлеры будут работать только на экранах меньше или равно 992px
-data-spollers="768,min" - спойлеры будут работать только на экранах больше или равно 768px
-
-Если нужно что бы в блоке открывался болько один слойлер добавляем атрибут data-one-spoller
-*/
-
-
 // SPOLLERS --------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -304,3 +324,5 @@ const contactsSmallSlider = new Swiper('.contacts-small__slider', {
 	},
 });
 //-- /contacts-small --------------------------------------------------------------------------------------------------------------------------
+
+
